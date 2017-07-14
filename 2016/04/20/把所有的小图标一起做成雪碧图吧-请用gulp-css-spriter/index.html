@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>把所有的小图标一起做成雪碧图吧 请用gulp-css-spriter. | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="用gulp-css-spriter很简单。第一步: 在某个文件夹用shitf+鼠标右键
+第二步: npm install gulp-css-spriterhttps://www.npmjs.com/package/gulp-css-spriter  (官网gulp插件)
+第三步:在gulpfile.js 文件1234567891011121314var gulp = require(&apos;gulp&apos;)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="把所有的小图标一起做成雪碧图吧 请用gulp-css-spriter.">
+<meta property="og:url" content="http://yoursite.com/2016/04/20/把所有的小图标一起做成雪碧图吧-请用gulp-css-spriter/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="用gulp-css-spriter很简单。第一步: 在某个文件夹用shitf+鼠标右键
+第二步: npm install gulp-css-spriterhttps://www.npmjs.com/package/gulp-css-spriter  (官网gulp插件)
+第三步:在gulpfile.js 文件1234567891011121314var gulp = require(&apos;gulp&apos;)">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102109254-1561742628.png">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102651519-2116473959.png">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102722238-2035695357.png">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102749801-1099997410.png">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102923410-1647628710.png">
+<meta property="og:updated_time" content="2016-04-20T02:32:12.451Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="把所有的小图标一起做成雪碧图吧 请用gulp-css-spriter.">
+<meta name="twitter:description" content="用gulp-css-spriter很简单。第一步: 在某个文件夹用shitf+鼠标右键
+第二步: npm install gulp-css-spriterhttps://www.npmjs.com/package/gulp-css-spriter  (官网gulp插件)
+第三步:在gulpfile.js 文件1234567891011121314var gulp = require(&apos;gulp&apos;)">
+<meta name="twitter:image" content="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102109254-1561742628.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="img/img.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">叶俊峰</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">前端</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						<li>Links</li>
+						
+						
+						<li>Über</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/qzmly100" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/p/1005051834594794?is_all=1" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/xie-jun-feng-3" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/前端/" style="font-size: 10px;">前端</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">叶俊峰</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="img/img.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">叶俊峰</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">前端</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/qzmly100" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/p/1005051834594794?is_all=1" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/xie-jun-feng-3" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-把所有的小图标一起做成雪碧图吧-请用gulp-css-spriter" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/20/把所有的小图标一起做成雪碧图吧-请用gulp-css-spriter/" class="article-date">
+  	<time datetime="2016-04-20T02:23:15.000Z" itemprop="datePublished">2016-04-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      把所有的小图标一起做成雪碧图吧 请用gulp-css-spriter.
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="用gulp-css-spriter很简单。"><a href="#用gulp-css-spriter很简单。" class="headerlink" title="用gulp-css-spriter很简单。"></a>用gulp-css-spriter很简单。</h2><h3 id="第一步-在某个文件夹用shitf-鼠标右键"><a href="#第一步-在某个文件夹用shitf-鼠标右键" class="headerlink" title="第一步: 在某个文件夹用shitf+鼠标右键"></a>第一步: 在某个文件夹用shitf+鼠标右键</h3><p><img src="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102109254-1561742628.png" alt="第一步"></p>
+<h3 id="第二步-npm-install-gulp-css-spriter"><a href="#第二步-npm-install-gulp-css-spriter" class="headerlink" title="第二步: npm install gulp-css-spriter"></a>第二步: npm install gulp-css-spriter</h3><p><a href="https://www.npmjs.com/package/gulp-css-spriter" target="_blank" rel="external">https://www.npmjs.com/package/gulp-css-spriter</a>  (官网gulp插件)</p>
+<h3 id="第三步-在gulpfile-js-文件"><a href="#第三步-在gulpfile-js-文件" class="headerlink" title="第三步:在gulpfile.js 文件"></a>第三步:在gulpfile.js 文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(<span class="string">'gulp'</span>);</span><br><span class="line">var spriter = require(<span class="string">'gulp-css-spriter'</span>);</span><br><span class="line"> </span><br><span class="line">gulp.task(<span class="string">'css'</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> gulp.src(<span class="string">'./css/recharge.css'</span>)//比如recharge.css这个样式里面什么都不用改，是你想要合并的图就要引用这个样式。 很重要 注意(recharge.css)这个是我的项目。别傻到家抄我一样的。</span><br><span class="line">        .pipe(spriter(&#123;</span><br><span class="line">            // The path and file name of <span class="built_in">where</span> we will save the sprite sheet</span><br><span class="line">            <span class="string">'spriteSheet'</span>: <span class="string">'./dist/images/spritesheet.png'</span>, //这是雪碧图自动合成的图。 很重要</span><br><span class="line">            // Because we don<span class="string">'t know where you will end up saving the CSS file at this point in the pipe,</span><br><span class="line">            // we need a litle help identifying where it will be.</span><br><span class="line">            '</span>pathToSpriteSheetFromCSS<span class="string">': '</span>../images/spritesheet.png<span class="string">' //这是在css引用的图片路径，很重要</span><br><span class="line">        &#125;))</span><br><span class="line">        .pipe(gulp.dest('</span>./dist/css<span class="string">')); //最后生成出来</span><br><span class="line">&#125;);</span></span><br></pre></td></tr></table></figure>
+<h3 id="第四步：打开生成的dist-css"><a href="#第四步：打开生成的dist-css" class="headerlink" title="第四步：打开生成的dist/css"></a>第四步：打开生成的dist/css</h3><p><img src="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102651519-2116473959.png" alt="第四步"><br><img src="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102722238-2035695357.png" alt="第五步"></p>
+<h3 id="这是合并之后的雪碧图"><a href="#这是合并之后的雪碧图" class="headerlink" title="这是合并之后的雪碧图"></a>这是合并之后的雪碧图</h3><p><img src="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102749801-1099997410.png" alt="第六步"><br>这是之前的所有图。 被我用并成上上面的雪碧图。很爽吧？ </p>
+<p>再看看生成后的css， 突然多出了什么。请看我红标注。多了定位。之前是没有这个定位。<br><img src="http://images2015.cnblogs.com/blog/716498/201603/716498-20160328102923410-1647628710.png" alt="1"></p>
+<h3 id="注（-使用gulp-css-spriter之前要安装node-js和gulp工具"><a href="#注（-使用gulp-css-spriter之前要安装node-js和gulp工具" class="headerlink" title="注（ 使用gulp-css-spriter之前要安装node.js和gulp工具)"></a>注（ 使用gulp-css-spriter之前要安装node.js和gulp工具)</h3>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/04/29/安装-Express/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          安装 Express
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/04/20/让您的Chrome浏览器允许本地环境支持Ajax/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">让您的Chrome浏览器允许本地环境支持Ajax</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 叶俊峰
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.min.js"></script>
+    <script type="text/javascript">
+      jQuery(function() {          
+          jQuery("img").lazyload({
+            placeholder:"http://www.arao.me/loading.gif",
+              effect:"fadeIn"
+            });
+          });
+  </script>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

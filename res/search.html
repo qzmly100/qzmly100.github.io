@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/addclear.js"></script>
+	<style>
+.search {
+  margin-top: 20px;
+  width: 400px;
+}
+.search #search_box {
+  width: 304px;
+  height: 30px;
+  *height: 32px;
+  padding-left: 11px;
+  font-size: 14px;
+  line-height: 30px;
+  border: 1px solid #f13468;
+  border-right: none;
+  outline: none;
+}
+.search .search-btn-shop {
+  right: -43px;
+}
+.search .search-btn,
+.search .search-btn-shop
+{
+  font-size: 14px;
+  line-height: 34px;
+  width: 70px;
+  height: 34px;
+  *height: 39px;
+  text-align: center;
+  display: inline-block;
+  color: #FFF;
+  background-color: #f13468;
+  margin-left: -4px;
+  text-decoration: none;
+  position: absolute;
+}
+.search .search-btn:hover,
+.search .search-btn-shop:hover{
+  text-decoration: none;
+  background-color: #de6864;
+}
+.search .hot-search {
+  margin-top: 5px;
+}
+.search .hot-search a {
+  font-size: 14px;
+  color: #333333;
+  margin-right: 12px;
+}
+.search .hot-search a:hover {
+  color: #656565;
+}
+#result_id {
+  padding-top: 0px;
+  width: 370px;
+  display: none;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+#result_id tr {
+  margin-left: 9px;
+  display: block;
+  line-height: 20px;
+}
+	</style>
+
+</head>
+<body>
+	
+
+<div class="search">
+	<span style="position:relative;" class="add-clear-span"><input type="text" id="search_box" placeholder="纸篓计划火热报名中"><a href="#clear" style="color: rgb(204, 204, 204); text-decoration: none; display: none; line-height: 1; overflow: hidden; position: absolute; right: 13px; top: 1px;">✖</a></span>
+	<a href="#clear" class="quickdelete" style="color: rgb(204, 204, 204); text-decoration: none; display: none; line-height: 1; overflow: hidden; position: absolute; right: 13px; top: 1px;"></a>
+	<a class="search-btn" href="search.php">搜&nbsp;索</a>
+	<div id="result_id" style="display: none;"></div>
+	<div class="hot-search">
+		<a href="nofound.shtml">美妆</a>
+		<a href="nofound.shtml">帝王瓦莱罗</a>
+		<a href="nofound.shtml">欧莱雅</a>
+		<a href="nofound.shtml">美妆</a>
+		<a href="nofound.shtml">帝王瓦莱罗</a>
+		<a href="nofound.shtml">欧莱雅</a>
+	</div>
+</div>
+
+
+
+<script>
+	 //搜索框下拉弹出菜单和清除输入值  必须先引入jquery库和jq插件
+    $(function(){
+        $("input").addClear();
+    });
+        $(function(){
+            var close = true ;
+            $("#search_box").keyup(function(){
+                var nkey = $.trim($(this).val()) ;
+                if("" == nkey || null == nkey){
+                    $("#result_id").hide() ;
+                }
+                else {
+                    //html 为ajax请求 返回的 字符串
+                    var html = '<table><tr><td>拼接</td></tr><tr><td>连衣裙</td></tr><tr> <td>你怎么可以那么美</td></tr></table>'
+                    $("#result_id").show() ;
+                    $("#result_id").html(html);
+                    $("#result_id table tr td").click(function(){
+                        $("#search_box").val($(this).html()) ;
+                        $("#result_id").hide() ;
+                    }).hover(
+                        function () {
+                            close = false ;
+                        },
+                        function () {
+                            close = true ;
+                        }
+                    ); ;
+                }
+            }).blur(function(){
+                if(close) {
+                    $("#result_id").hide() ;
+                }
+            });
+
+            $(".search-btn").click(function(){
+                alert("抱歉没有这货") ;
+            });
+        });
+</script>
+</body>
+</html>
